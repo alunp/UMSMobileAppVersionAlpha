@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.umsv6"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+    
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Load"
+            android:label="UMS Mobile App" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".Beranda"
+            android:label="UMS Mobile"></activity>
+        <activity 
+            android:name=".Selayang"
+            android:label="Selayang Pandang"></activity>
+        <activity 
+            android:name=".Sistem"
+            android:label="Sistem Informasi Akademik"></activity>
+        <activity 
+            android:name=".Hubungi"
+            android:label="Hubungi Kami"></activity>
+        <activity 
+            android:name=".Berita"
+            android:label="Berita Terbaru"></activity>
+        <activity 
+            android:name=".KontakActivity"
+            android:label="Kontak Activity"></activity>
+        <activity 
+            android:name=".ServiceHandler"
+            android:label="Service Handler"></activity>
+    </application>
+
+</manifest>

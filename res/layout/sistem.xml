@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+	         android:id="@+id/logo"
+	         android:layout_width="290dp"
+	         android:layout_height="wrap_content"	         
+	         android:layout_marginTop="0dp"
+	         android:layout_centerHorizontal="true"
+	         android:src="@drawable/logo" />
+    
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_height="wrap_content"
+        android:text="Nomor Induk Mahasiswa" />
+
+    <EditText
+        android:id="@+id/edit_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nim"        
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/sandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_nim"
+        android:text="Kata Sandi" />
+
+    <EditText
+        android:id="@+id/edit_sandi"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/sandi"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_sandi"
+        android:text="Button" />
+    
+     <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="copyright 2015"
+        android:textSize="10dp" />
+    
+</RelativeLayout>
